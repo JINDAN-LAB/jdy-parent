@@ -1,0 +1,18 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+zuul:
+  ignored-services: microservicecloud-dept   #隐藏真实存在的路径
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://kong01.com:7001/eureka,http://kong02.com:7002/eureka,http://kong03.com:7003/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
