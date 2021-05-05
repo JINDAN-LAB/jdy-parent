@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.jdy.mapper.EduCourseMapper">
+
+
+
+
+
+    <select id="getCoursePublishVoById" resultType="com.edu.jdy.entity.dto.CoursePublishVo">
+        SELECT
+            c.title,
+            c.cover,
+            c.lesson_num AS lessonNum,
+            CONVERT(c.price, DECIMAL(8,2)) AS price,
+            s1.title AS subjectLevelOne,
+            s2.title AS subjectLevelTwo,
+            t.name AS teacherName
+        FROM
+            edu_course c
+            LEFT JOIN edu_teacher t ON c.teacher_id = t.id
+            LEFT JOIN edu_subject s1 ON c.subject_parent_id = s1.id
+            LEFT JOIN edu_subject s2 ON c.subject_id = s2.id
+        WHERE
+            c.id = #{id}
+    </select>
+
+
+<!--    @ApiModelProperty(value = "课程销售价格，设置为0则可免费观看")-->
+<!--    private BigDecimal price;-->
+<!--    @ApiModelProperty(value = "总课时")-->
+<!--    private Integer lessonNum;-->
+<!--    @ApiModelProperty(value = "课程封面图片路径")-->
+<!--    private String cover;-->
+<!--    @ApiModelProperty(value = "课程简介")-->
+<!--    private String description;-->
+<!--    @ApiModelProperty(value = "课程专业父级ID")-->
+<!--    private String subjectParentId;-->
+<!--    selectByList-->
+
+
+
+    <select id="selectByList" parameterType="com.edu.jdy.entity.EduCourse" resultType="com.edu.jdy.entity.dto.CourseInfoForm">
+       SELECT
+		 edu_course_description.description as description,
+		 edu_course.id as id,
+		  edu_course.teacher_id as teacherId,
+		 edu_course.subject_id as  subjectId,
+		 edu_course.title as  title,
+		 edu_course.price as  price ,
+		 edu_course.lesson_num as  lessonNum,
+		  edu_course.cover as  cover
+		 FROM edu_course
+		LEFT JOIN edu_course_description ON edu_course.id = edu_course_description.id
+		where edu_course.subject_id = #{id}
+
+    </select>
+
+
+</mapper>

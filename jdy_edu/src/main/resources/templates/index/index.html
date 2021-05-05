@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>金丹科技</title>
+</head>
+<style>
+    body,html{
+        margin:0;
+        padding: 0;
+        max-width:640px;
+        min-width:320px;
+        background: #fff !important;
+        overflow-x: hidden;
+        font-size: 100px;
+    }
+    .shouquan{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding: .2rem;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: .4rem;
+    }
+    .form-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        /* background: #f5f5f5; */
+    }
+    #phone{
+        width: 3rem;
+        height: .35rem;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,.15);
+        font-size: 14px;
+        margin-bottom: .25rem;
+        padding-left: .2rem;
+        box-sizing: border-box;
+    }
+    #weicharId{
+        width: 3rem;
+        height: .35rem;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0,0,0,.15);
+        font-size: 14px;
+        margin-bottom: .25rem;
+        padding-left: .2rem;
+        box-sizing: border-box;
+    }
+    .login{
+        width: 3rem;
+        height: .35rem;
+        border: none;
+        background: #00aa00;
+        color: #FFFFFF;
+        border-radius: 5px;
+        text-align: center;
+        line-height: .32rem;
+        font-size: 14px;
+        font-weight: 600;
+    }
+</style>
+<body>
+<div class="shouquan">
+    <div class="form-item">
+        <div class="title">微信ID th:value="${openId}" </div>
+        <input type="text" id="weicharId" placeholder="微信ID" value="123456"  readonly="readonly" />
+        <div class="title">用户登录</div>
+        <input type="text" id="phone" placeholder="请输入手机号" />
+        <div class="login">登录</div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        let userinfo = null
+        $('.login').click(function(){
+            userinfo = $('#weicharId').val()
+            const phone = $('#phone').val()
+            let user = {
+                "wecharId": userinfo,
+                "phone": phone
+            }
+            $.ajax({
+                url: 'http://127.0.0.1:20201/jdyUser/weixinRenzheng',
+                type: 'post',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(user),
+                success: res => {
+                    console.log(res)
+                    if(res.code == 200){
+                        alert('登录绑定成功！')
+                    }else{
+                        alert(res.message)
+                    }
+                },
+                error: res => {
+                    console.log(res)
+                }
+            })
+        })
+    })
+</script>
+
+

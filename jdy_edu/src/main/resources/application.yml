@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: rabbitmq-consumer
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
+activiti:
+  database-schema-update: true
+  check-process-definitions: false
+dubbo:
+  registry:
+    protocol: zookeeper
+    address: 192.168.80.1:2181
+    id: jdy
+  protocol:
+    port: 20880
+    id: dubbo
+    name: dubbo
+  application:
+    id: jdy-edu
+    name: jdy-edu
+    qos-enable: false
+  scan:
+    basePackages: com.edu.jdy.service
+  provider:
+    timeout: 30000
+my_queue: boot-active-queue
