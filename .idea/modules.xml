@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service-api/eureka-service-api.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service-api/eureka-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service-center.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service-register/eureka-service-register.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service-register/eureka-service-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service-register03/eureka-service-register03.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service-register03/eureka-service-register03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service-register20/eureka-service-register20.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service-register20/eureka-service-register20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service-zuul-gateway/eureka-service-zuul-gateway.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service-zuul-gateway/eureka-service-zuul-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service01/eureka-service01.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service01/eureka-service01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service02/eureka-service02.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service02/eureka-service02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka-service03/eureka-service03.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka-service03/eureka-service03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka_controller80/eureka_controller80.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka_controller80/eureka_controller80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/eureka_controller81_fegin/eureka_controller81_fegin.iml" filepath="$PROJECT_DIR$/eureka-service-center/eureka_controller81_fegin/eureka_controller81_fegin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy-admin/jdy-admin.iml" filepath="$PROJECT_DIR$/jdy-admin/jdy-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy-api/jdy-api.iml" filepath="$PROJECT_DIR$/jdy-api/jdy-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy-common/jdy-common.iml" filepath="$PROJECT_DIR$/jdy-common/jdy-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy-mapper/jdy-mapper.iml" filepath="$PROJECT_DIR$/jdy-mapper/jdy-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy-parent.iml" filepath="$PROJECT_DIR$/jdy-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy-service/jdy-service.iml" filepath="$PROJECT_DIR$/jdy-service/jdy-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy_edu/jdy_edu.iml" filepath="$PROJECT_DIR$/jdy_edu/jdy_edu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdy_timing/jdy_timing.iml" filepath="$PROJECT_DIR$/jdy_timing/jdy_timing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service-center/microservicecloud-controller82-hystrix/microservicecloud-controller82-hystrix.iml" filepath="$PROJECT_DIR$/eureka-service-center/microservicecloud-controller82-hystrix/microservicecloud-controller82-hystrix.iml" />
+    </modules>
+  </component>
+</project>

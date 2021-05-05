@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1400" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service-api" />
+        <module name="eureka-service-register" />
+        <module name="eureka-service-register03" />
+        <module name="eureka-service-register20" />
+        <module name="eureka-service-zuul-gateway" />
+        <module name="eureka-service01" />
+        <module name="eureka-service02" />
+        <module name="eureka-service03" />
+        <module name="eureka_controller80" />
+        <module name="eureka_controller81_fegin" />
+        <module name="jdy-admin" />
+        <module name="jdy-api" />
+        <module name="jdy-common" />
+        <module name="jdy-mapper" />
+        <module name="jdy-service" />
+        <module name="jdy_edu" />
+        <module name="jdy_timing" />
+        <module name="microservicecloud-controller82-hystrix" />
+        <module name="untitled" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-service-api" target="1.8" />
+      <module name="eureka-service-center" target="1.8" />
+      <module name="eureka-service-register" target="1.8" />
+      <module name="eureka-service-register03" target="1.8" />
+      <module name="eureka-service-register20" target="1.8" />
+      <module name="eureka-service-zuul-gateway" target="1.8" />
+      <module name="eureka-service01" target="1.8" />
+      <module name="eureka-service02" target="1.8" />
+      <module name="eureka-service03" target="1.8" />
+      <module name="eureka_controller80" target="1.8" />
+      <module name="eureka_controller81_fegin" target="1.8" />
+      <module name="jdy-admin" target="1.8" />
+      <module name="jdy-api" target="1.8" />
+      <module name="jdy-common" target="1.8" />
+      <module name="jdy-mapper" target="1.8" />
+      <module name="jdy-parent" target="1.8" />
+      <module name="jdy-service" target="1.8" />
+      <module name="jdy_edu" target="1.8" />
+      <module name="jdy_timing" target="1.8" />
+      <module name="microservicecloud-controller82-hystrix" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

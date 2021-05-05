@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="jdy@106.13.122.154" uuid="b8396f63-c4e7-47d0-9650-7daee0b4a53b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://106.13.122.154:3306/jdy</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="Hongkong" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
