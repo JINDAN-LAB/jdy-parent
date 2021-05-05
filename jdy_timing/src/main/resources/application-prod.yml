@@ -1,0 +1,53 @@
+spring:
+  datasource:
+    url: jdbc:mysql://60.13.122.154:3306/jdy?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Jindan.root
+    hikari:
+      connection-timeout: 50000
+      min-idle: 10
+      max-pool-size: 20
+      connection-test-query: SELECT 1
+      validation-timeout: 250
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000ms
+    lettuce:
+      pool:
+        max-active: 100
+        max-wait: 15000ms
+        min-idle: 5
+dubbo:
+  registry:
+    protocol: zookeeper
+   address:  127.0.0.1:2181
+    id: jdy
+  protocol:
+    port: 20881
+    id: dubbo
+    name: dubbo
+  application:
+    id: jdy-service
+    name: jdy-service
+    qos-enable: false
+  scan:
+    basePackages: com.jindan.jdy.service
+  provider:
+    timeout: 30000
+mybatis-plus:
+  mapper-locations: classpath:/com/jiandan/jdy/common/mapper/*Mapper.xml
+  typeAliasesPackage: com.jiandan.jdy.common.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    cache-enabled: false
+  global-config:
+    banner: false
+    db-config:
+      db-type: mysql
+wechat:
+  mpAppId: wxb5b6dfa9e8b12f50
+  mpAppSecret: 6da768a60cdd737cc30c32134d7071c6
+  token: 33333
+  aeskey: 44444
