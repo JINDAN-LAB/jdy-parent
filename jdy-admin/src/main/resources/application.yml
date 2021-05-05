@@ -1,0 +1,50 @@
+server:
+  port: 20201
+  connection-timeout: 5000ms
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  servlet:
+    context-path: /jdy-admin
+    session:
+      cookie:
+        http-only: true
+service:
+  version: 1.0
+spring:
+  application:
+    name: jdy-admin
+  profiles:
+    active: test
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSq
+aliyun:
+  oss:
+    file:
+      endpoint: oss-cn-beijing.aliyuncs.com
+      keyid: LTAI4FpooemptjwNoXAKe4Su
+      keysecret: Wt8tkmUfjGiOp9NhJ8C4fqbbMDDVpb
+      bucketname: kong15
+      filehost: avatar
+      host: career
+apppush:
+  appId: 123456
+  appKey: 7899+456
+  masterSecret: 123585555
+  url: http://sdk.open.api.igexin.com/apiex.htm
+

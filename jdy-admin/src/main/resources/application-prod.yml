@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    id: jdy-admin
+    name: jdy-admin
+    qos-enable: false
+  registry:
+    id: jdy
+    protocol: zookeeper
+    address: 106.13.122.154:2181
+  consumer:
+    timeout: 30000
